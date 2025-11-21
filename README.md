@@ -40,9 +40,10 @@ graph TD
     DownloadA --> UpdateState[Update State File]
     DownloadB --> UpdateState
     DownloadC --> UpdateState
-    
+
     UpdateState --> Exit[Exit 0]
 
+```
 
 Dynamic Resolution (最新策略): Tries to fetch the latest version via a command pipeline.
 History Replay (历史回放): If dynamic fails, retries the URL that worked last time (from state file).
